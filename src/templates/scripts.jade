@@ -1,0 +1,5 @@
+script(src="js/plugins/jquery.min.js")
+script(src="js/plugins/bootstrap.min.js")
+mixin scripts(...items)
+	each item in items
+		script(src="js/#{item}.js")

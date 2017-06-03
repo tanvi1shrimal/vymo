@@ -1,0 +1,247 @@
+.footer-wrapper {
+	background-color: @body-bg;
+	padding: 30px 0 0;
+	@media(min-width: 768px) {
+		padding: 45px 0 30px;
+	}	
+	@media(min-width: 1200px) {
+		padding: 60px 0 30px;
+	}
+	.footer-content {
+		text-align: center;
+		@media(min-width: 768px) {
+			.flex;
+			.flex-wrap(wrap);
+			.justify-content(space-between);
+		}	
+		@media(min-width: 1200px) {
+			.align-items(center);
+		}
+		.footer-logo {
+			display: block;
+			text-align: center;
+			margin-bottom: 25px;
+			@media(min-width: 768px) {
+				flex: 1 0 100%;
+			}	
+			@media(min-width: 1200px) {				  
+			  flex:  inherit;
+			  padding: 0 55px;  
+				order: 2;
+				margin-bottom: 0;
+			}	
+		}
+		.footer-links {
+	    display: inline-block;
+	    vertical-align: top;
+	    text-align: left;
+			@media(max-width: 1199px) {
+				.flex;
+		    .justify-content(center);
+		    .flex-wrap(wrap);
+		    flex: 1 0 100%
+			}
+			@media(min-width: 1200px) {
+				padding: 0;
+		    .justify-content(space-between);
+		    order: 1;
+			}
+			li {
+				margin-right: 20px;
+				padding: 5px 0;
+				position: relative;
+				@media(min-width: 768px) {
+					display: inline-block;
+					margin-right: 30px;
+				}
+				@media(min-width: 1200px) {
+					display: inline-block;
+					margin-right: 20px;
+					padding: 0;
+				}
+				a {
+					font-size: @fnt-size12;
+					line-height: @line-height-24;
+					color: @gray-darker;
+					&:hover {
+						color: @brand-primary;
+					}
+					@media(min-width: 768px) {
+						font-size: @fnt-size14;
+						line-height: @line-height-26;
+					}
+				}
+				&:last-child {
+					margin-right: 0px;
+				}
+			}
+		}
+		.footer-others {
+			@media(min-width: 1200px) {
+				order: 3;
+			}
+			li {
+				&:last-child {
+					@media(min-width: 1200px) {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-copyright {
+	text-align: center;
+	background-color: @brand-light-color;
+	padding: 5px 0;
+	margin: 0 -15px;
+	@media(min-width: 768px) {
+		text-align: center;
+		background-color: transparent;
+		margin: 0;
+	}
+	@media(min-width: 1200px) {
+		text-align: left;
+	}
+	p {
+		font-size: @fnt-size12;
+		line-height: @line-height-24;
+		color: @gray-most-light;
+		margin-bottom:0;
+		@media(min-width: 768px) {
+			line-height: @line-height-26;
+		}
+	}
+}
+.social-links {
+	text-align: center;
+	margin: 25px 0;
+	@media(min-width: 768px) {
+		flex: 1 0 100%;
+	}
+	@media(min-width: 1200px) {
+		flex: inherit;
+		text-align: left;
+		margin: 0;
+		order: 4;
+	}
+	li {
+		display: inline-block;
+		padding:0 5px;
+		a.social-icons {
+			display: inline-block;
+			font-size: 0px;
+			cursor: pointer;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			text-align: center;
+			position: relative;
+			z-index: 1;
+			color: @gray-most-light;
+			&:after {
+				pointer-events: none;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				content:'';
+			}
+			&:after {
+				top: 0;
+				left: 0;
+				padding: 0;
+				box-shadow: 0 0 0 2px @gray-most-light;
+				-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+				-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+				transition: transform 0.2s, opacity 0.2s;
+			}
+			&:before {
+				speak: none;
+				font-size: @fnt-size16;
+				line-height: @line-height-32;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				display: block;
+				-webkit-font-smoothing: antialiased;
+			}
+			&:hover {
+				&:after {
+					-webkit-transform: scale(0.85);
+					-moz-transform: scale(0.85);
+					-ms-transform: scale(0.85);
+					transform: scale(0.85);
+					opacity: 0.5;
+				}
+			}
+			&.fa-linkedin {
+				&:hover {
+					color: @linkedin-icon-color;
+					box-shadow: 0 0 0 3px @linkedin-icon-color;
+					&:after {
+						box-shadow: 0 0 0 2px @linkedin-icon-color;
+					}
+				}
+			}
+			&.fa-youtube-play {
+				&:hover {
+					color: @youtube-icon-color;
+					box-shadow: 0 0 0 3px @youtube-icon-color;
+					&:after {
+						box-shadow: 0 0 0 2px @youtube-icon-color;
+					}
+				}
+			}
+			&.fa-twitter {
+				&:hover {
+					color: @twitter-icon-color;
+					box-shadow: 0 0 0 3px @twitter-icon-color;
+					&:after {
+						box-shadow: 0 0 0 2px @twitter-icon-color;
+					}
+				}
+			}
+			&.fa-facebook {
+				&:hover {
+					color: @facebook-icon-color;
+					box-shadow: 0 0 0 3px @facebook-icon-color;
+					&:after {
+						box-shadow: 0 0 0 2px @facebook-icon-color;
+					}
+				}
+			}
+		}
+		&:last-child {
+			@media(min-width: 1200px) {
+				padding-right: 0px;
+			}
+		}
+	}
+}
+
+
+&.footer-link-effect {
+	&:before {
+		content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: @brand-primary;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+    line-height: 20px;
+	}
+	&:hover, &:focus {
+		&:before {
+			visibility: visible;
+			transform: scaleX(1);
+		}
+	}
+}

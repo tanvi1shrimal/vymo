@@ -1,0 +1,244 @@
+.vymo-client-logos {
+	position: absolute;
+	bottom: 10px;
+	z-index: 10;
+	@media(min-width: 768px) {
+		bottom: 40px;
+	}
+	ul {
+	}
+}
+
+.section-block {
+	padding: 40px 0;
+	@media(min-width: 768px) {
+		padding: 55px 0;
+	}
+	h2 {
+		position: relative;
+		&:before{
+			content: "";
+	    height: 2px;
+	    width: 24px;
+	    position: absolute;
+	    background: @brand-primary;
+	    z-index: 1;
+	    top: -15px;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    transform: translateX(-50%);
+		}
+		&:first-child {
+			&:before{
+				width: 0px;
+		    .transition(0.6s ease-in);
+			}
+		}
+		&.active {
+			&:first-child {
+				&:before{
+					width: 24px;
+			    .transition(0.6s ease-in);
+				}
+			}
+		}
+		&.border-left-align {
+			&:before {
+				left: 15px;
+			}
+		}
+	}
+}
+
+.vymo-what {
+	height: 440px;
+	@media(min-width: 768px){
+		height: 630px;
+	}
+	h2 {
+		&:before {
+			background-color: @body-bg;
+		}
+	}
+	.vymo-tab-wrapper {
+		position: relative;
+		@media(min-width: 768px){
+			.tabs-img {
+				margin: 0 auto;
+				opacity: 0;
+				top: 150px;
+				&.pos-absolute {
+		      position: absolute;
+		      .transition(all 1s linear);
+		    }
+		    &.active {
+		      opacity: 1;
+		      .transition(all 1s linear);
+		    }
+			}
+		}
+		@media(min-width: 1200px){
+			.tabs-img {
+				top: 80px;
+			}
+		}			
+		.vymo-tabs {
+			margin: 15px 0;
+			position: absolute;
+			top:0;
+			.box-shadow(0px 1px 9px 3px rgba(0,0,0,0.08));
+			@media(min-width: 768px){
+				margin: 55px 0;
+				max-width: 558px;
+			}
+		}
+	}
+}
+
+.vymo-feature {
+	padding: 55px 0 35px;
+	@media(min-width: 768px) {
+		padding: 190px 0 75px;
+	}
+	.vymo-feature-img {
+		@media(max-width: 767px) {
+			height: 155px;
+			margin: 0 auto;
+		}
+	}
+	.feature-block {
+		padding: 40px 0 0;
+		@media(min-width: 768px) {
+			padding: 0;
+		}
+		.feature-listing {
+			@media(min-width: 992px) {
+				width: 310px;
+			}
+			.list-group {
+				.list-group-item {
+					span {
+						margin-left: 20px;
+						@media(min-width: 768px) {
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.vymo-testimonial {
+	.content-wrapper {
+		margin: 30px 0;
+		clear: both;
+		@media(min-width: 768px) {
+			margin: 55px 0 10px;
+		}
+		.testimonial-video {
+			a {
+				cursor: pointer;
+				display: block;
+				position:relative;
+				.overlay {
+					position: absolute;
+					background-color: rgba(0,0,0,0.5);
+					top:0;
+					left:0;
+					width: 100%;
+					height: 100%;
+					.flex;
+					.align-items(center);
+    			.justify-content(center);
+					.video-icon {
+						background-color: @brand-dark-red;
+						width: 35px;
+						height: 35px;
+						border-radius: 20px;
+						text-align: center;
+						line-height: 35px;
+						color: @white-text;
+						i {
+							font-size: @fnt-size15;
+						}
+					}
+				}
+			}
+		}
+		.testimonial-description {
+			padding: 25px 0;
+			@media(min-width: 768px) {
+				padding: 0 0 25px;
+			}
+			h5 {
+				font-family: @font-family-robotoSlab;
+				margin-top: 0;
+			}
+			.customer-details {
+				padding: 25px 0;
+				@media(min-width: 768px) {
+					padding: 30px 0;
+				}
+				&--name {
+					font-weight: @font-weight-bold;
+					font-size: @fnt-size13;
+					text-transform: @text-uppercase;
+				}
+				&--position {
+					font-size: @fnt-size14;
+				}
+			}
+		}
+	}
+}
+
+.vymo-resources {
+	.vymo-tags-bg {
+		position: absolute;
+		left: 20px;
+		top: -12px;
+		@media(min-width: 768px) {
+			left: 30px;
+			top: -14px;
+		}
+	}
+	.vymo-case-studies {
+		padding-top: 20px;
+		@media(max-width: 767px) {
+			margin-top: 25px;
+		}
+		@media(min-width:768px) and (max-width: 991px) {
+			margin-top: 55px;
+		}
+		@media(min-width: 768px) {
+			padding-top: 0px;
+		}
+	}
+}
+
+.vymo-newsupdate {
+	.thumbnail .caption {
+		padding-bottom: 0;
+		.caption-listing {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	} 
+}
+
+.vymo-getstarted {
+	h5 {
+		color: @gray-lite;
+		padding: 0 50px 30px;
+		@media(min-width: 768px) {
+			padding: 0 15px 25px;
+		}
+	}
+
+	a {
+		margin-bottom: 15px;
+	}
+}

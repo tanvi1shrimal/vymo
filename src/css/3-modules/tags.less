@@ -1,0 +1,36 @@
+.vymo-tags-links {
+	li {
+		margin: 0 45px 10px 0;
+		@media(min-width: 768px) {
+			margin: 0 50px 10px 0;
+		}
+		a {
+			font-size: @fnt-size12;
+			font-weight: bolder;
+		}
+	}
+}
+
+.vymo-tags-bg {
+	.tags {
+		font-size: @fnt-size12;
+		font-weight: @font-weight-bold;
+		line-height: @line-height-20;
+		color: @white-text;
+		text-transform: @text-uppercase;
+		display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 0;
+		padding: 4px 10px;
+    @media(min-width: 768px) {
+			padding: 3px 15px;
+			font-size: @fnt-size14;
+			line-height: @line-height-24;
+    }
+    &.tags-primary {
+			background-color: @brand-primary;
+		}
+	}
+	
+}

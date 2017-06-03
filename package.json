@@ -1,0 +1,23 @@
+{
+  "name": "vymo",
+  "version": "1.0.0",
+  "description": "Vymo is a personal sales assistant that predicts what a sales rep or manager should do next, automatically detects what is being done, learns the behaviour of the best reps, and coaches the rest through intelligent interventions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lollypop UI/UX Studio",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-watch-less": "^1.0.1",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}

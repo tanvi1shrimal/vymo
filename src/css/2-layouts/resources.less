@@ -1,0 +1,107 @@
+.vymo-case-studies {
+	.vymo-casestudies-content {
+		@media(min-width: 768px) {
+			margin: 40px 5% 0;
+		}
+		.casestudies-block {
+			margin-bottom: 40px;
+			@media(min-width: 768px) {
+				margin-bottom: 50px;
+			}
+			h3 {
+				// font-weight: @font-weight-bold;
+				// font-size: @fnt-size16;
+				// line-height: @line-height-24;
+				// @media(min-width: 768px) {
+				// 	font-size: @fnt-size18;
+				// 	line-height: @line-height-34;
+				// }
+				// @media(min-width: 992px) {
+				// 	font-size: @fnt-size28;
+				// }
+				&.font-weight-bold {
+					font-weight: @font-weight-bold;
+				}
+			}
+			h4 {
+				// color: @gray-darker;
+				font-size: @fnt-size14;
+				line-height: @line-height-24;
+				@media(min-width: 768px) {
+					font-size: @fnt-size14;
+					line-height: @line-height-26;
+				}
+				@media(min-width: 992px) {
+					font-size: @fnt-size18;
+					line-height: @line-height-30;
+				}
+			}
+			.casestudies-details {
+				position: relative;
+				&--logo {
+					margin: 10px 0 20px;
+				}
+				&--name {
+					font-weight: @font-weight-semibold;
+					font-size: @fnt-size12;
+					color: @black-darker;
+					@media(min-width: 768px) {
+						font-size: @fnt-size16;
+					}
+				}
+				&--position {
+					font-weight: @font-weight-regular;
+					font-size: @fnt-size12;
+					color: @black-thick;
+					@media(min-width: 768px) {
+						font-size: @fnt-size14;
+					}
+				}
+				.read-more-link {
+					position: relative;
+					@media(min-width: 992px) {
+						position: absolute;
+						bottom: 4px;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//set flex for vertically height equal
+.vymo-casestudies-content {
+	.row {
+		@media(min-width: 768px) {
+			.flex;
+		}
+		.col-sm-6 {
+			@media(min-width: 768px) {
+				.flex;
+			}
+			.casestudies-block {
+				@media(min-width: 768px) {
+					.flex;
+					.flex-direction(column);
+				}
+				h4 {
+					@media(min-width: 768px) {
+						flex: 1 0 auto;
+					}
+				}
+			}
+			&:nth-child(1) {
+				@media(min-width: 992px) {
+					margin-right: 25px;
+				}
+			}
+			&:nth-child(2) {
+				@media(min-width: 992px) {
+					margin-left: 25px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+.vymo-banner-wrapper {
+	color: @white-text;
+	height: 480px;
+	width: 100%;
+  display: table;
+	background-size: cover; 
+	position: relative;
+	@media(min-width: 768px) {
+		height: 100vh;
+	}
+	.vymo-video {
+		position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: none;
+    video {
+			margin: auto;
+	    position: absolute;
+	    z-index: -1;
+	    top: 50%;
+	    left: 50%;
+	    .translate(-50%,-50%);
+	    visibility: visible;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+    }
+	}
+	.vymo-video-content {
+		vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    img {
+    	height: 100%;
+	    width: 100%;
+	    z-index: 1;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+    }
+    h1 {
+    	z-index: 10;
+    }
+	}
+	&--resources {
+		background: url('../../img/resources-banner.jpg') no-repeat;
+		background-size: cover;
+		overflow: hidden;
+		height: 158px;
+		@media(min-width: 768px) {
+			height: 470px;
+		}
+		@media(min-width: 992px) {
+			height: 550px;
+		}
+		.vymo-banner-content {
+			vertical-align: middle;
+	    display: table-cell;
+	    text-align: center;
+	    position: relative;
+		}
+	}
+}

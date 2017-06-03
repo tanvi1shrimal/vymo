@@ -1,0 +1,34 @@
+.list-group {
+	margin: 5px 0 20px;
+	.list-group-item {
+		font-weight: @font-weight-semibold;
+		font-size: @fnt-size14;
+		line-height: @line-height-24;
+		position: relative;
+		.flex;
+	  .align-items(center);
+	  .justify-content(flex-start);
+		@media(min-width: 768px){
+			font-size: @fnt-size16;
+			line-height: @line-height-28;
+		}
+		span {
+			border-bottom: 1px dashed @gray-lite;
+			display: inline-block;
+			padding: 15px 0;
+			width: 85%;
+			@media(min-width: 768px){
+				width: 75%;
+			}
+			@media(min-width: 992px){
+				padding: 22px 0;
+				width: 85%;
+			}
+		}
+		&:last-child {
+			span {
+				border-bottom: 0;
+			}
+		}
+	}
+}

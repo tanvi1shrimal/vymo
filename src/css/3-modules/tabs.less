@@ -1,0 +1,179 @@
+/*****************************/
+/* Falling Icon, from http://vintageproductions.eu/grid/interactivity/ */ 
+/*****************************/
+
+.vymo-tabs {
+	background-color: @body-bg;
+	padding: 10px 15px; 
+	z-index: 1;
+	.tab-content {
+		padding: 15px 0px 5px;
+		@media(min-width: 768px) {
+			padding: 30px 0px;
+		}
+	}
+}
+.tabs-listing-item {
+	li {
+		border-bottom: 1px dashed @gray-lite;
+		position: relative;
+		padding: 15px 0;
+		@media(min-width: 768px){
+			padding: 25px 0;
+		}
+		span {
+			font-size: @fnt-size14;
+			line-height: @line-height-24;
+			color: @black-lite;
+			font-weight: @font-weight-light;
+			@media(min-width: 768px ) {
+				font-size: @fnt-size18;
+				line-height: @line-height-30;
+			}
+		}
+		&:after {
+			content:"";
+			width: 15px;
+			height: 1px;
+			background-color: @brand-dark-red;
+			position: absolute;
+			bottom: -1px;
+	    left: 50%;
+	    margin-left: -7.5px;
+		}
+		&:last-child {
+			border-bottom: 0;
+			&:after {
+				content: none;
+			}
+		}
+	}
+}
+.tabs.tabs-style-iconfall {
+	overflow: visible;
+	nav {
+		li {
+			a {
+				display: inline-block;
+				overflow: visible;
+				padding: 10px 0;
+				color: @black-thick;
+				line-height: 1;
+				.transition(color 0.3s cubic-bezier(0.7,0,0.3,1)); 
+				&:hover, &:focus {
+					color: @brand-dark-red;
+				}
+				span {
+					font-weight: 700;
+					font-size: @fnt-size12;
+					line-height: @line-height-20;
+					text-transform: @text-uppercase;
+					@media(min-width: 768px) {
+						font-size: @fnt-size14;
+						line-height: @line-height-26;
+					}
+				}
+				@media(min-width: 768px) {
+					padding: 15px 0 10px;
+				}
+			}
+			&.active {
+				&:before {
+					opacity: 1;
+					-webkit-transform: scale3d(1,1,1);
+					transform: scale3d(1,1,1);
+				}
+				a {
+					color: @brand-dark-red;
+				}
+			}
+			&:before {
+				position: absolute;
+				bottom: -4px;
+				left: 50%;
+				margin-left: -10px;
+				width: 20px;
+				height: 4px;
+				background: @brand-dark-red;
+				content: '';
+				opacity: 0;
+				.transition(transform 0.2s ease-in);
+				-webkit-transform: scale3d(0,1,1);
+				transform: scale3d(0,1,1);
+			}
+		}
+	}
+}
+/* Nav */
+.tabs nav {
+	text-align: center;
+	border-bottom: 1px solid @gray-liter;
+	padding-bottom: 4px;
+	@media(min-width: 992px) {
+		margin: 0 20px;
+	}
+	ul {
+		position: relative;
+		.flex;
+		.justify-content(space-between);
+		.align-items(center);
+		margin: 0 auto;
+		padding: 0;
+		list-style: none;
+		li {
+			position: relative;
+			z-index: 1;
+			display: block;
+			margin: 0;
+			text-align: center;
+			a {
+				position: relative;
+				display: block;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				line-height: 2.5;
+				span {
+					vertical-align: middle;
+					font-size: 0.75em;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+			&.active {
+				a {
+					color: @black-thick;
+				}
+			}
+		}
+		&:before, &:after {
+			content: none;
+		}	
+	}
+}
+
+// .tabs-style-iconfall .icon::before {
+// 	display: block;
+// 	margin: 0 0 0.35em;
+// 	opacity: 0;
+// 	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+// 	transition: transform 0.2s, opacity 0.2s;
+// 	-webkit-transform: translate3d(0,-100px,0);
+// 	transform: translate3d(0,-100px,0);
+// 	pointer-events: none;
+// }
+
+// .tabs-style-iconfall nav li.tab-current .icon::before {
+// 	opacity: 1;
+// 	-webkit-transform: translate3d(0,0,0);
+// 	transform: translate3d(0,0,0);
+// }
+
+// @media screen and (max-width: 58em) {
+// 	.tabs-style-iconfall nav li .icon::before {
+// 		opacity: 1;
+// 		-webkit-transform: translate3d(0,0,0);
+// 		transform: translate3d(0,0,0);
+// 	}
+// }

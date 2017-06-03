@@ -1,0 +1,417 @@
+doctype html
+html(lang="en")
+	head
+		include templates/header.jade
+		+header('Home Page')
+
+	body
+		// Main Wrapper starts
+		.main-wrapper
+			// Header starts
+			header.header-wrapper
+				include templates/navbar.jade
+			// Header ends
+
+			// Banner starts
+			.vymo-banner-wrapper.text-center
+				.vymo-video
+					video.imgfull(autoplay loop poster="img/banner-mobile.jpg")
+						source(src="video/black.webm" type="video/webm")
+						source(src="video/black.mp4" type="video/mp4")
+				.vymo-video-content
+					h1.wow.fadeInDown(data-wow-delay=".5s")
+						span.vymo-headline.loading-bar World’s first 
+							span.vymo-headline-text.brand-secondary-color
+								b.is-visible Personalized
+								b Intelligent
+								b Proactive
+							br
+						| Enterprise Assistant
+
+				.vymo-client-logos.col-xs-10.col-xs-push-1.col-sm-8.col-sm-push-2.col-md-4.col-md-push-4
+					ul.list-inline.slick-one-slider.wow.fadeInUp(data-wow-delay=".8s")
+						li
+							img(src="img/client-logos/absolut.png" alt="Absolut logo")
+						li
+							img(src="img/client-logos/nestle.png" alt="Nestle logo")
+						li
+							img(src="img/client-logos/bp.png" alt="BP logo")
+						li
+							img(src="img/client-logos/anz.png" alt="ANZ logo")
+						li
+							img(src="img/client-logos/absolut.png" alt="Absolut logo")
+						li
+							img(src="img/client-logos/nestle.png" alt="Nestle logo")
+						li
+							img(src="img/client-logos/bp.png" alt="BP logo")
+						li
+							img(src="img/client-logos/anz.png" alt="ANZ logo")
+			// Banner ends
+
+			// what Vymo starts
+			section.section-block.vymo-what.vymo-red-bg
+				.container
+					.row
+						h2.text-center.text-white.active.wow.fadeInDown(data-wow-delay=".3s")
+							| What VYMO can do for you?
+						.vymo-tab-wrapper
+							img.tabs-img.img-responsive.pos-relative.active(src="img/illustrator-img1.png" alt="Arrow Icon" data-image="tab1")
+							img.tabs-img.img-responsive.pos-absolute(src="img/illustrator-img2.png" alt="Arrow Icon" data-image="tab2")
+							img.tabs-img.img-responsive.pos-absolute(src="img/illustrator-img3.png" alt="Arrow Icon" data-image="tab3")
+							.vymo-tabs.col-xs-10.col-xs-push-1.col-sm-8.col-sm-push-2.col-md-6.col-md-push-3.wow.fadeInDown(data-wow-delay=".6s")
+								.row
+									.col-xs-12.col-sm-8.col-sm-push-2.tabs.tabs-style-iconfall
+										nav
+											ul.nav.nav-tabs(role="tablist")
+												li.active(data-tabs="tab1" role="presentation")
+													a(href="#salesRep" aria-controls="salesRep" role="tab" data-toggle="tab")
+														span Sales Rep
+												li(data-tabs="tab2" role="presentation")
+													a(href="#salesManager" aria-controls="salesManager" role="tab" data-toggle="tab")
+														span Sales Manager
+												li(data-tabs="tab3" role="presentation")
+													a(href="#admin" aria-controls="admin" role="tab" data-toggle="tab")
+														span Admin
+										.tab-content.text-center
+											.tab-pane.active(role="tabpanel" id="salesRep")
+												ul.tabs-listing-item.text-center
+													li
+														span
+															| Prioritize the leads that can cause
+															br
+															| a big bang
+													li
+														span
+															| Learn how to close the gap to 
+															br
+															| achieve targets
+													li
+														span
+															| Reschedule meetings
+															br
+															| on the fly
+												a.btn.vymo-btn-primary-link.read-more-btn
+													| MORE INFO
+													img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+											.tab-pane.text-center(role="tabpanel" id="salesManager")
+												ul.tabs-listing-item
+													li
+														span
+															| Prioritize the leads that can cause
+															br
+															| a big bang
+													li
+														span
+															| Learn how to close the gap to 
+															br
+															| achieve targets
+													li
+														span
+															| Reschedule meetings
+															br
+															| on the fly
+												a.btn.vymo-btn-primary-link.read-more-btn
+													| MORE INFO
+													img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+											.tab-pane(role="tabpanel" id="admin")
+												ul.tabs-listing-item.text-center
+													li
+														span
+															| Prioritize the leads that can cause
+															br
+															| a big bang
+													li
+														span
+															| Learn how to close the gap to 
+															br
+															| achieve targets
+													li
+														span
+															| Reschedule meetings
+															br
+															| on the fly
+												a.btn.vymo-btn-primary-link.read-more-btn
+													| MORE INFO
+													img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+			// what Vymo ends
+
+			// Vymo Feature starts
+			section.section-block.vymo-feature.vymo-offwhite-bg
+				.container
+					.row
+						.col-sm-6.col-md-7.text-center
+							img.img-responsive.vymo-feature-img.wow.fadeInLeft(src="img/vymo-feature-img.png" alt="Vymo Feature" data-wow-delay=".3s")
+
+						.col-sm-6.col-md-4.col-md-push-1
+							.feature-block
+								h2.border-left-align.active.wow.fadeInDown(data-wow-delay=".4s")
+									| Some awesome features
+								h4.wow.fadeInDown(data-wow-delay=".6s")
+									| Vymo converts all manual operations and decision making into rule based algorithms. 
+								.feature-listing
+									ul.list-group
+										li.list-group-item.wow.fadeIn(data-wow-delay="600ms")
+											img(src="img/icon-sales.png" alt="Icon Sales")
+											span
+												| Accelerated sales performance
+										li.list-group-item.wow.fadeIn(data-wow-delay="800ms")
+											img(src="img/icon-user.png" alt="Icon User")
+											span
+												| No-touch lead management
+										li.list-group-item.wow.fadeIn(data-wow-delay="1000ms")
+											img(src="img/icon-setting.png" alt="Icon Setting")
+											span
+												| Predictive Activity Planning
+								a.btn.vymo-btn-primary-link.read-more-btn
+									| LEARN MORE
+									img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+			// Vymo Feature ends
+
+			// Vymo Testimonail starts
+			section.section-block.vymo-testimonial.vymo-white-bg
+				.container
+					.row
+						h2.text-center.active.wow.fadeInDown(data-wow-delay=".3s")
+							| What our customers are saying
+						
+						.content-wrapper.clearfix
+							.slick-slider
+								.slick-slider--item
+									.col-sm-6.col-md-7
+										.testimonial-video.wow.fadeInLeft(data-wow-delay=".4s")
+											a(data-toggle="modal" data-target="#myModal")
+												img.img-responsive(src="img/vymo-video1.jpg" alt="Vymo Feature")
+									.col-sm-6.col-md-5
+										.testimonial-description.wow.fadeInRight(data-wow-delay=".4s")
+											h5
+												| “Vymo addresses 2 fundamental issues with sales teams: Reps don't enter data. Supervisors are not proactive. Vymo does much of this by itself; leading to thousands of better operational decisions, ground up every day. It almost clones me, to create every sales person's assistant.”
+											.customer-details
+												p.customer-details--name
+													| Vineeti Patni
+												p.customer-details--position
+													| Chief Distribution Officer
+												img.customer-details--logo(src="img/testimonial-cust-logo.png" alt="Client Logo")
+								.slick-slider--item
+									.col-sm-6.col-md-7
+										.testimonial-video
+											img.img-responsive(src="img/vymo-video1.jpg" alt="Vymo Feature")
+
+									.col-sm-6.col-md-5
+										.testimonial-description
+											h5
+												| “Vymo addresses 2 fundamental issues with sales teams: Reps don't enter data. Supervisors are not proactive. Vymo does much of this by itself; leading to thousands of better operational decisions, ground up every day. It almost clones me, to create every sales person's assistant.”
+											.customer-details
+												p.customer-details--name
+													| Vineeti Patni
+												p.customer-details--position
+													| Chief Distribution Officer
+												img.customer-details--logo(src="img/testimonial-cust-logo.png" alt="Client Logo")
+								.slick-slider--item
+									.col-sm-6.col-md-7
+										.testimonial-video
+											img.img-responsive(src="img/vymo-video1.jpg" alt="Vymo Feature")
+
+									.col-sm-6.col-md-5
+										.testimonial-description
+											h5
+												| “Vymo addresses 2 fundamental issues with sales teams: Reps don't enter data. Supervisors are not proactive. Vymo does much of this by itself; leading to thousands of better operational decisions, ground up every day. It almost clones me, to create every sales person's assistant.”
+											.customer-details
+												p.customer-details--name
+													| Vineeti Patni
+												p.customer-details--position
+													| Chief Distribution Officer
+												img.customer-details--logo(src="img/testimonial-cust-logo.png" alt="Client Logo")
+								.slick-slider--item
+									.col-sm-6.col-md-7
+										.testimonial-video
+											img.img-responsive(src="img/vymo-video1.jpg" alt="Vymo Feature")
+
+									.col-sm-6.col-md-5
+										.testimonial-description
+											h5
+												| “Vymo addresses 2 fundamental issues with sales teams: Reps don't enter data. Supervisors are not proactive. Vymo does much of this by itself; leading to thousands of better operational decisions, ground up every day. It almost clones me, to create every sales person's assistant.”
+											.customer-details
+												p.customer-details--name
+													| Vineeti Patni
+												p.customer-details--position
+													| Chief Distribution Officer
+												img.customer-details--logo(src="img/testimonial-cust-logo.png" alt="Client Logo")
+			// Vymo Testimonial ends
+
+			// Vymo Resources starts
+			section.section-block.vymo-resources.vymo-offwhite-bg
+				.container
+					.row
+						h2.text-center.active.wow.fadeInDown(data-wow-delay=".3s")
+							| Resources
+						.content-wrapper.clearfix
+							.col-sm-10.col-sm-push-1.col-md-5.col-md-push-0.wow.fadeInLeft(data-wow-delay=".6s")
+								.vymo-white-bg.pos-relative
+									.vymo-tags-bg
+										span.tags.tags-primary
+											| Blog
+									.thumbnail
+										img.blog-thumbnail(src="img/blog-image.jpg" alt="Blog Image")
+										.caption
+											.caption-listing
+												h3
+													| 3 Things Game of Thrones Can Teach Sales
+												p.post-detail--name
+													| Niveditha Viswanathan
+													span.post-detail--date
+														| 24th June
+												p
+													| Winter has come, yet again. With the new season of GoT out, everyone is waiting to get their hands on it. So while we are all binge watching the series, why not take some learnings...
+												a.btn.vymo-btn-primary-link.read-more-btn
+													| READ MORE
+													img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+											.caption-listing
+												h3
+													| Three Ways Predictive Analytics Can Help You Achieve Higher Win Rates
+												p.post-detail--name
+													| Niveditha Viswanathan
+													span.post-detail--date
+														| 24th June
+												a.btn.vymo-btn-primary-link.read-more-btn
+													| READ MORE
+													img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+							.col-sm-10.col-sm-push-1.col-md-7.col-md-push-0.wow.fadeInRight(data-wow-delay=".6s")
+								.vymo-white-bg.vymo-case-studies.pos-relative
+									.vymo-tags-bg
+										span.tags.tags-primary
+											| CASE STUDIES
+									.panel
+										.panel-body
+											.panel-listing
+												h3.font-weight-bold
+													| Bharti AXA Case Study
+												p
+													| “Data capture has become easy. We are freed up from day to day follow-ups and operational decision making. There is so much we are learning every day. And we are constantly adding this back...”
+												a.btn.vymo-btn-primary-link.read-more-btn
+													| READ MORE
+													img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+											.panel-listing
+												h3.font-weight-bold
+													| Bioseed
+												p
+													| “Data capture has become easy. We are freed up from day to day follow-ups and operational decision making. There is so much we are learning every day. And we are constantly adding this back...”
+												a.btn.vymo-btn-primary-link.read-more-btn
+													| READ MORE
+													img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+											.panel-listing
+												h3
+													| Other Case Studies
+												ul.list-inline.vymo-tags-links
+													li
+														a.btn.vymo-btn-primary-link
+															| Jyothi Laboratories Ltd. 
+													li
+														a.btn.vymo-btn-primary-link
+															| Connect India
+													li
+														a.btn.vymo-btn-primary-link
+															| Bharti axa Case study
+													li
+														a.btn.vymo-btn-primary-link
+															| Large pvt. bank
+													li
+														a.btn.vymo-btn-primary-link
+															| Bioseed
+													li
+														a.btn.vymo-btn-primary-link
+															| Bharti axa Case study
+			// Vymo Resources ends
+
+			// Vymo News Updates starts
+			section.section-block.vymo-newsupdate.vymo-white-bg
+				.container
+					.row
+						h2.text-center.active.wow.fadeInDown(data-wow-delay=".3s")
+							| News Updates
+						.content-wrapper.thumbnai-3-blocks.clearfix
+							.col-lg-4.wow.fadeInUp(data-wow-delay="500ms")
+								.thumbnail
+									img.blog-thumbnail(src="img/news-img1.jpg" alt="News Image")
+									.caption.padding-lr0
+										.caption-listing
+											h3
+												| News Update 01 - Standard Image layout
+											p.post-detail--name
+												| Niveditha Viswanathan
+												span.post-detail--date
+													| 24th June
+											p
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quisquam est, qui dolorem ipsum ...
+										
+							.col-lg-4.wow.fadeInUp(data-wow-delay="800ms")
+								.thumbnail
+									img.blog-thumbnail(src="img/news-img2.jpg" alt="News Image")
+									.caption.padding-lr0
+										.caption-listing
+											h3
+												| News Update 02 - Analyst Report
+											p.post-detail--name
+												| Niveditha Viswanathan
+												span.post-detail--date
+													| 24th June
+											p
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quisquam est, qui dolorem ipsum ...
+
+							.col-lg-4.wow.fadeInUp(data-wow-delay="1100ms")
+								.thumbnail
+									img.blog-thumbnail(src="img/news-img3.jpg" alt="News Image")
+									.caption.padding-lr0
+										.caption-listing
+											h3
+												| News Update 03 - Youtube Video
+											p.post-detail--name
+												| Niveditha Viswanathan
+												span.post-detail--date
+													| 24th June
+											p
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quisquam est, qui dolorem ipsum ...
+							.col-sm-12.text-center
+								a.btn.vymo-btn-primary-link
+									| READ MORE blogs
+									img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+			// Vymo News Updates ends
+
+			// Vymo Get Started starts
+			section.section-block.vymo-getstarted.vymo-darker-bg
+				.container
+					.row
+						h2.text-center.text-white.active.wow.fadeInDown(data-wow-delay=".3s")
+							| Our roll outs are quick!
+						.col-xs-12.col-md-6.col-md-offset-3.text-center
+							h5.wow.fadeInDown(data-wow-delay=".5s")
+								| Go live in a week. See business impact in a month. Witness what a truly mobile first business assistant looks like!
+							a.btn.vymo-btn-secondary.brand-primary-text.wow.fadeInDown(data-wow-delay=".7s" href="javasript:void(0);") 
+								| GET STARTED
+			// Vymo Get Started ends
+
+			// Footer starts
+			footer.footer-wrapper
+				include templates/footer.jade
+			// Footer ends
+		
+		// Main Wrapper ends
+
+		// Modal Popup starts
+		#myModal.modal.fade.modal-vertical-align.modal-video-wrap(role="dialog")
+			button.close(type="button" data-dismiss="modal")
+				img(src="img/icon-cross.png" alt="close-icon")
+			.modal-dialog.modal-lg.modal-dialog--video
+				.modal-content
+					.modal-body
+						.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src="video/black.mp4" allowfullscreen)
+		// Modal Popup ends
+
+		// Scripts section
+		include templates/scripts.jade
+		// END: Scripts section
+		+scripts('main','effect','plugins/slick.min','plugins/wow.min')

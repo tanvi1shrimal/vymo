@@ -1,0 +1,301 @@
+doctype html
+html(lang="en")
+	head
+		include templates/header.jade
+		+header('Home Page')
+
+	body
+		// Main Wrapper starts
+		.main-wrapper
+			// Header starts
+			header.header-wrapper
+				include templates/navbar.jade
+			// Header ends
+
+			// Banner starts
+			.vymo-banner-wrapper.vymo-banner-wrapper--resources.text-center
+				.vymo-banner-content
+					h1
+						|	Resources 
+			// Banner ends
+			
+			// Casestudies starts
+			section.section-block.vymo-case-studies.padd-0.vymo-offwhite-bg
+				.container
+					.row
+						.col-sm-12
+							.vymo-white-bg.vymo-common-section
+								h2.text-center.active
+									| Case Studies
+								.vymo-casestudies-content
+									.row
+										.col-sm-6
+											.casestudies-block
+												h3.font-weight-bold.border-left-align.active
+													| Bioseed
+												h4
+													| “Data capture has become easy. We are freed up from day to day follow-ups and operational decision making. There is so much we are learning every day. And we are constantly adding this back to the rule engine of the solution to keep improving rep performance. Vymo has become a trusted partner in our journey.”
+												.casestudies-details
+													img.casestudies-details--logo(src="img/casestudies-logo1.png" alt="Casestudies Logo")
+													p.casestudies-details--name
+														| Lovlesh Nagori
+													p.casestudies-details--position
+														| Manager - Digital Projects
+													.read-more-link
+														a.btn.vymo-btn-primary-link
+															| READ MORE
+															img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+										.col-sm-6
+											.casestudies-block
+												h3.font-weight-bold.border-left-align.active
+													| Jyothy Laboratories Ltd.
+												h4
+													| “Within weeks of launch, we have started getting consistent data at regular frequency. This is giving us the ability to negotiate higher stocking and manage inventory costs more granularly. Vymo has become a platform that we can use to manage other field-force processes. Looking forward to a long partnership.”
+												.casestudies-details
+													img.casestudies-details--logo(src="img/casestudies-logo2.png" alt="Casestudies Logo")
+													p.casestudies-details--name
+														| Venkitachalam Krishnan
+													p.casestudies-details--position
+														| Head – Modern Trade & Corporate Sales
+													.read-more-link
+														a.btn.vymo-btn-primary-link
+															| READ MORE
+															img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+									.row
+										.col-sm-6
+											.casestudies-block
+												h3.font-weight-bold.border-left-align.active
+													| Bharti AXA Life Insurance
+												h4
+													| “It is a perfect solution for removing information asymmetry that exists between company-employee and customer. This application had also helped us in increasing our reach to the untapped potential markets. Now our team is better planned and most importantly self disciplined without any follow up calls from reporting managers.”
+												.casestudies-details
+													img.casestudies-details--logo(src="img/casestudies-logo3.png" alt="Casestudies Logo")
+													p.casestudies-details--name
+														| Mohan Das Gupta
+													p.casestudies-details--position
+														| E-commerce & online marketing, Bharati AXA
+													.read-more-link
+														a.btn.vymo-btn-primary-link
+															| READ MORE
+															img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+										.col-sm-6
+											.casestudies-block
+												h3.font-weight-bold.border-left-align.active
+													| Connect India
+												h4
+													| “Vymo is helping us make decisions real time, both algorithmically and spatially. Vymo's geo plug-ins are helping optimise decisions which will give us significant competitive edge on delivery costs, turnaround time and quality.”
+												.casestudies-details
+													img.casestudies-details--logo(src="img/casestudies-logo4.png" alt="Casestudies Logo")
+													p.casestudies-details--name
+														| Mohan Das Gupta
+													p.casestudies-details--position
+														| E-commerce & online marketing, Bharati AXA
+													.read-more-link
+														a.btn.vymo-btn-primary-link
+															| READ MORE
+															img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+									.row
+										.col-sm-6
+											.casestudies-block
+												h3.font-weight-bold.border-left-align.active
+													| Large Pvt. Bank
+												h4
+													| “We have been able to get never-before visibility into our acquisition team's productivity through Vymo. In some channels, conversions have gone up by almost 50%. For all of its intelligence, Vymo's beauty is in its easy design which helps drive adoption and feeds managers with insights that help them become pro-active. We see the product getting even better every day as their team works hand in hand with us to drive our success.”
+												.casestudies-details
+													img.casestudies-details--logo(src="img/casestudies-logo5.png" alt="Casestudies Logo")
+													p.casestudies-details--name
+														| Mohan Das Gupta
+													p.casestudies-details--position
+														| E-commerce & online marketing, Bharati AXA
+													.read-more-link
+														a.btn.vymo-btn-primary-link
+															| READ MORE
+															img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+			// Casestudies 
+
+			// Vymo Blogs starts
+			section.section-block.vymo-newsupdate.vymo-offwhite-bg
+				.container
+					.row
+						h2.text-center.text-black-darker.active
+							| Blogs
+						.content-wrapper.thumbnai-3-blocks.clearfix
+							.col-lg-4
+								.thumbnail
+									img.blog-thumbnail(src="img/blog-common-img.png" alt="News Image")
+									.caption
+										.caption-listing
+											h3
+												| 3 Things Game of Thrones Can Teach Sales
+											p.post-detail--name
+												| Niveditha Viswanathan
+												span.post-detail--date
+													| 24th June
+											p
+												| Winter has come, yet again. With the new season of GoT out, everyone is waiting to get their hands on it. So while we are all binge watching the series, why not take some learnings...
+											a.btn.vymo-btn-primary-link
+												| READ MORE
+												img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+										
+							.col-lg-4
+								.thumbnail
+									img.blog-thumbnail(src="img/blog-common-img.png" alt="News Image")
+									.caption
+										.caption-listing
+											h3
+												| You don't need a diamond for this kind of engagement.
+
+											p.post-detail--name
+												| Niveditha Viswanathan
+												span.post-detail--date
+													| 24th June
+											p
+												| Engaging sales folks and field teams in a consistent manner is hard. Be it on an app or in the office or in KRA conversations. These guys want to get up, be up and about and check off their daily tasks each employee ...
+											a.btn.vymo-btn-primary-link
+												| READ MORE
+												img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+							.col-lg-4
+								.thumbnail
+									img.blog-thumbnail(src="img/blog-common-img.png" alt="News Image")
+									.caption
+										.caption-listing
+											h3
+												| We are all being fooled at work.
+											p.post-detail--name
+												| Niveditha Viswanathan
+												span.post-detail--date
+													| 24th June
+											p
+												| Increasingly, sales organizations are adapting to the new, digital, mobile workforce. Almost every enterprise is jumping on the boat that is sailing toward a well-defined mobile and digital strategy...
+											a.btn.vymo-btn-primary-link
+												| READ MORE
+												img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+
+							.col-sm-12.text-center.mar-t-40
+								a.btn.vymo-btn-primary-link
+									| SEE ALL
+									img(src="img/icon-right-arrow.png" alt="Arrow Icon")
+			// Vymo Blogs ends
+
+			// Vymo Testimonail starts
+			section.section-block.vymo-testimonial.vymo-white-bg
+				.container
+					.row
+						h2.text-center.text-black-darker.active.wow.fadeInDown(data-wow-delay=".3s")
+							| What our customers are saying
+						
+						.content-wrapper.clearfix
+							.col-sm-6
+								.row
+									.col-md-5
+										.testimonial-video
+											a.testimonial-media(data-toggle="modal" data-target="#myModal")
+												img.img-responsive(src="img/vymo-video1.jpg" alt="Vymo Feature")
+												.overlay
+													.video-icon
+														i.fa.fa-play
+									.col-md-7
+										.testimonial-description
+											h4
+												| “Vymo addresses 2 fundamental issues with sales teams: Reps don't enter data. Supervisors are not proactive. Vymo does much of this by itself; leading to thousands of better operational decisions, ground up every day. It almost clones me, to create every sales person's assistant.”
+											.customer-details
+												p.customer-details--name
+													| Vineeti Patni
+												p.customer-details--position
+													| Chief Distribution Officer
+												img.customer-details--logo(src="img/testimonial-cust-logo.png" alt="Client Logo")
+							.col-sm-6
+								.row
+									.col-md-5
+										.testimonial-video
+											a.testimonial-media
+												img.img-responsive(src="img/vymo-video1.jpg" alt="Vymo Feature")
+									.col-md-7
+										.testimonial-description
+											h4
+												| “Vymo addresses 2 fundamental issues with sales teams: Reps don't enter data. Supervisors are not proactive. Vymo does much of this by itself; leading to thousands of better operational decisions, ground up every day. It almost clones me, to create every sales person's assistant.”
+											.customer-details
+												p.customer-details--name
+													| Vineeti Patni
+												p.customer-details--position
+													| Chief Distribution Officer
+												img.customer-details--logo(src="img/testimonial-cust-logo.png" alt="Client Logo")
+							.col-sm-6
+								.row
+									.col-md-5
+										.testimonial-video
+											a.testimonial-media
+												img.img-responsive(src="img/vymo-video1.jpg" alt="Vymo Feature")
+									.col-md-7
+										.testimonial-description
+											h4
+												| “Vymo addresses 2 fundamental issues with sales teams: Reps don't enter data. Supervisors are not proactive. Vymo does much of this by itself; leading to thousands of better operational decisions, ground up every day. It almost clones me, to create every sales person's assistant.”
+											.customer-details
+												p.customer-details--name
+													| Vineeti Patni
+												p.customer-details--position
+													| Chief Distribution Officer
+												img.customer-details--logo(src="img/testimonial-cust-logo.png" alt="Client Logo")
+							.col-sm-6
+								.row
+									.col-md-5
+										.testimonial-video
+											a.testimonial-media(data-toggle="modal" data-target="#myModal")
+												img.img-responsive(src="img/vymo-video1.jpg" alt="Vymo Feature")
+												.overlay
+													.video-icon
+														i.fa.fa-play
+									.col-md-7
+										.testimonial-description
+											h4
+												| “Vymo addresses 2 fundamental issues with sales teams: Reps don't enter data. Supervisors are not proactive. Vymo does much of this by itself; leading to thousands of better operational decisions, ground up every day. It almost clones me, to create every sales person's assistant.”
+											.customer-details
+												p.customer-details--name
+													| Vineeti Patni
+												p.customer-details--position
+													| Chief Distribution Officer
+												img.customer-details--logo(src="img/testimonial-cust-logo.png" alt="Client Logo")
+			// Vymo Testimonial ends
+
+
+
+
+			// Vymo Get Started starts
+			section.section-block.vymo-getStarted.vymo-darker-bg
+				.container
+					.row
+						h2.text-center.text-white.active.wow.fadeInDown(data-wow-delay=".3s")
+							| Get a glimpse of
+						.col-xs-12.col-md-6.col-md-offset-3.text-center
+							h4.wow.fadeInDown(data-wow-delay=".5s")
+								| How we think, ink and sink into each others’ lives at Vymo.
+							a.btn.vymo-btn-secondary.brand-primary-text.wow.fadeInDown(data-wow-delay=".7s" href="javasript:void(0);") 
+								| Get to know us
+			// Vymo Get Started ends
+
+			// Footer starts
+			footer.footer-wrapper
+				include templates/footer.jade
+			// Footer ends
+		
+		// Main Wrapper ends
+
+		// Modal Popup starts
+		#myModal.modal.fade.modal-vertical-align.modal-video-wrap(role="dialog")
+			button.close(type="button" data-dismiss="modal")
+				img(src="img/icon-cross.png" alt="close-icon")
+			.modal-dialog.modal-lg.modal-dialog--video
+				.modal-content
+					.modal-body
+						.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src="video/black.mp4" allowfullscreen)
+		// Modal Popup ends
+
+		// Scripts section
+		include templates/scripts.jade
+		// END: Scripts section
+		+scripts('main','plugins/slick.min','plugins/wow.min')
